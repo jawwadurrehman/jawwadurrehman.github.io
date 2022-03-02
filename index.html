@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="https://abhishekjha.me//logo.png" />
-    <link rel="stylesheet" href=".//../css/unistyles.css" />
+    <link rel="stylesheet" href="../css/unistyles.css" />
     <meta
       name="keywords"
       content="ui/ux, designer, freelance, website, portfolio"
@@ -333,7 +333,7 @@
       <!--BANNER-->
       <div class="bnr col-12">
         <div class="bnr_c">
-          <img id="scroll" src=".//scroll.png" />
+          <img id="scroll" src="../photos/scroll.png" />
           <div>
             <p class="delay">
               <span class="row">
@@ -408,11 +408,11 @@
             data-offset="-80"
             data-emergence="visible"
           >
-            <img id="imgb" src=".//b4.jpg" />
+            <img id="imgb" src="../photos/b4.jpg" />
             <div>
               <img
                 id="imgc"
-                src=".//c4.png"
+                src="../photos/c4.png"
                 class="luxy-el"
                 data-speed-y="15"
                 style="transform: translate3d(0px, 423.6px, 0px)"
@@ -489,7 +489,7 @@
                   data-speed-y="4"
                   data-offset="-65"
                 >
-                  <img id="img_chu" src=".//chuu.png" />
+                  <img id="img_chu" src="../photos/chu.png" />
                 </div>
               </div>
             </a>
@@ -538,7 +538,7 @@
                   data-speed-y="-5"
                   data-offset="110"
                 >
-                  <img id="img_sho" src=".//shoe.png" />
+                  <img id="img_sho" src="../photos/shoe.png" />
                 </div>
               </div>
             </a>
@@ -561,14 +561,14 @@
                 onmousemove="vis();"
                 onmouseout="hid();"
               >
-                <img class="bg" src=".//pobg.jpg" />
+                <img class="bg" src="../photos/pobg.jpg" />
                 <div
                   class="luxy-el"
                   data-speed-y="-4"
                   data-offset="175"
                   style="transform: translate3d(0px, 62.04px, 0px)"
                 >
-                  <img id="img_abu" src=".//post.png" />
+                  <img id="img_abu" src="../photos/post.png" />
                 </div>
               </div>
             </a>
@@ -588,14 +588,14 @@
                 onmousemove="vis();"
                 onmouseout="hid();"
               >
-                <img class="bg" src=".//ptbg.jpg" />
+                <img class="bg" src="../photos/ptbg.jpg" />
                 <div
                   style="left: 8.1%; transform: translate3d(0px, -28.52px, 0px)"
                   class="luxy-el"
                   data-speed-y="2"
                   data-offset="-85"
                 >
-                  <img id="img_sta" src=".//pt.png" />
+                  <img id="img_sta" src="../photos/pt.png" />
                 </div>
               </div>
             </a>
@@ -697,7 +697,7 @@
       id="float"
       class="float beh"
       style="left: 893px; top: 694px; opacity: 0"
-      ><img src=".//beh.png"
+      ><img src="../photos/beh.png"
     /></span>
     <!--SCRIPTS-->
     <script>
@@ -716,8 +716,8 @@
       document.getElementById("year").innerHTML = new Date().getFullYear();
 
       function changeImg(imgNumber) {
-        var bImg = ["/b1.jpg", "/b2.jpg", "/b3.jpg", "/b4.jpg"];
-        var cImg = ["/c1.png", "/c2.png", "/c3.png", "/c4.png"];
+        var bImg = ["../photos/b1.jpg", "../photos//b2.jpg", "../photos/b3.jpg", "../photos/b4.jpg"];
+        var cImg = ["../photos/c1.png", "../photos/c2.png", "../photos/c3.png", "../photos/c4.png"];
         //var imgShown = document.getElementById('imgc').src;
         var newImgNumber = Math.floor(Math.random() * bImg.length);
         document.getElementById("imgb").src = bImg[newImgNumber];
