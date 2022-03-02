@@ -36,17 +36,17 @@ body, ::-webkit-scrollbar, .imgrev::before{
 
 @font-face {
   font-family: circular;
-  src: url(fonts/CircularStd-Book.woff2);
+  src: url(../fonts/CircularStd-Book.woff2);
 }
 
 @font-face {
   font-family: sequel;
-  src: url(fonts/MonumentExtended-Bold.woff);
+  src: url(../fonts/MonumentExtended-Bold.woff);
 }
 
 @font-face {
   font-family: circular_bold;
-  src: url(fonts/CircularStd-Medium.woff2);
+  src: url(../fonts/CircularStd-Medium.woff2);
 }
 
 
