@@ -2,25 +2,25 @@
  * Written by Mineo Okuda on 01/03/18.
  *
  * Mineo Okuda - development + design
- * https:/willstyle.co.jp
- * https:/github.com/min30327
+ * https://willstyle.co.jp
+ * https://github.com/min30327
  *
  * MIT license.
  */
 
-(function(root, factory) {
+ (function(root, factory) {
 	'use strict';
 
 	if (typeof define === 'function' && define.amd) {
-		/ AMD. Register as an anonymous module.
+		// AMD. Register as an anonymous module.
 		define([], factory);
 	}
 	else if (typeof exports === 'object') {
-		/ COMMONJS
+		// COMMONJS
 		module.exports = factory();
 	}
 	else {
-		/ BROWSER
+		// BROWSER
 		root.luxy = factory();
 	}
 }(this, function() {
@@ -48,13 +48,13 @@
 		 */
 		var extend = function () {
 
-			/ Variables
+			// Variables
 			var extended = {};
 			var deep = false;
 			var i = 0;
 			var length = arguments.length;
 
-			/ Merge the object into the extended object
+			// Merge the object into the extended object
 			var merge = function (obj) {
 				for (var prop in obj) {
 					if (obj.hasOwnProperty(prop)) {
@@ -63,7 +63,7 @@
 				}
 			};
 
-			/ Loop through each object and conduct a merge
+			// Loop through each object and conduct a merge
 			for ( ; i < length; i++ ) {
 				var obj = arguments[i];
 				merge(obj);
