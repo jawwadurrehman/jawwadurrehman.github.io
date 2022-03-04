@@ -71,6 +71,9 @@ ul, li{
 h3, h4{
   font-weight: normal;
 }
+img#imgc {
+  filter: drop-shadow(0px 4px 20px #00000040) brightness(1.001) contrast(1.05) saturate(1.2);
+}
 
 p, h1, h5{
   cursor: default;
