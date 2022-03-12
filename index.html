@@ -1,812 +1,227 @@
 <!DOCTYPE html>
-
-<html lang="en" class="emergence">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-    <title>Jawwad Ur Rehman — Web And App Developer</title>
-
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="/logo.png" />
-    <link rel="stylesheet" href="../css/unistyles.css" />
-    <meta
-      name="keywords"
-      content="ui/ux, designer, freelance, website, portfolio"
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
+    <title>Web And App Developer In Pakistam - Jawwad Ur Rehman</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/important.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
     />
-    <meta name="author" content="Jawwad Ur Rehman" />
-    <meta
-      name="description"
-      content="Portfolio of Jawwad Ur Rehman. A visual designer currently available for freelance."
-    />
-    <meta name="theme-color" content="#f94444" />
-    <meta
-      name="twitter:card"
-      content="Jawwad Ur Rehman — Web And App Developer.."
-    />
-    <meta name="twitter:site" content="@designflavorist" />
-    <meta name="twitter:creator" content="@designflavorist" />
-    <meta name="twitter:url" content="https:/abhishekjha.me" />
-    <meta name="twitter:title" content="2019 Portfolio of Jawwad Ur Rehman" />
-    <meta
-      name="twitter:description"
-      content="Jawwad Ur Rehman is a visual designer . He makes high-end user interfaces."
-    />
-    <meta name="twitter:image" content="/card.jpg" />
-    <meta
-      name="twitter:image:alt"
-      content="Jawwad Ur Rehman Visual Designer."
-    />
-
-    <style>
-      .loader {
-        background: #161618;
-        width: 100%;
-        height: 100%;
-        z-index: 100;
-        position: fixed;
-        top: 0;
-        left: 0;
-        text-align: center;
-        display: block;
-        transition: 0.4s;
-      }
-
-      .loader img {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 40%;
-        margin: auto;
-      }
-
-      .loader h1 {
-        position: absolute;
-        bottom: 10vh;
-        left: 50%;
-        transform: translate(-50%, 0);
-        font-size: 2vw;
-      }
-
-      .bnr {
-        position: relative;
-        height: 100vh;
-      }
-
-      .bnr h1 span:first-child > span,
-      .copy span:first-child > span {
-        transition-delay: 0.6s;
-      }
-
-      .bnr h1 span:nth-child(2) > span,
-      .copy span:nth-child(2) > span {
-        transition-delay: 0.7s;
-      }
-
-      .bnr_c {
-        position: absolute;
-        width: 39vw;
-        left: 50%;
-        transform: translate(-50%, 50px);
-        z-index: 3;
-      }
-
-      #scroll {
-        position: absolute;
-        right: -9%;
-        top: 23vh;
-        width: 100px;
-        z-index: 5;
-      }
-
-      #scroll,
-      .beh {
-        animation-name: rotate;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-      }
-
-      @keyframes rotate {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
-      .bnr_c p {
-        font-size: 16px;
-      }
-
-      .bnr_t {
-        position: relative;
-        transform: translate(0, 55vh);
-        height: inherit;
-      }
-
-      .bnr_t > div {
-        position: absolute;
-      }
-
-      .bnr_img {
-        margin-top: -4%;
-      }
-
-      .bnr_t > .no-out h1 {
-        -webkit-text-stroke: 0 #4bbfda;
-        text-stroke: 0 #4bbfda;
-        color: #fff;
-      }
-
-      .bnr_t img {
-        width: 39vw;
-        margin: auto;
-      }
-
-      .le {
-        margin-left: -18%; /*23*/
-      }
-
-      .bnr_img {
-        width: 39vw;
-        height: auto;
-        position: relative;
-      }
-
-      .bnr_img > div {
-        position: absolute;
-        top: 8%;
-        left: 0;
-        width: 80%;
-      }
-
-      .bnr_img > div img {
-        transition: none;
-      }
-
-      .bnr_img img {
-        z-index: 3;
-      }
-
-      #img_chu {
-        width: 14.5vw;
-      }
-
-      #img_sho {
-        width: 85%;
-      }
-
-      #img_abu {
-        width: 90%;
-      }
-
-      #img_sta {
-        width: 84%;
-      }
-
-      .con {
-        margin-top: 50vh;
-        justify-content: space-between;
-      }
-
-      .con_t > div {
-        width: 70%;
-        position: relative;
-        z-index: 3;
-        margin: 0 auto -5.2% auto;
-      }
-
-      .con_p {
-        transform: translate(-4.53vw, 5.1%);
-        color: #fff;
-      }
-
-      .btn {
-        border-bottom: 1px solid rgba(240, 240, 243, 0.18);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 0;
-        box-shadow: inset 0 0 #fff;
-        transition: 0.6s;
-      }
-
-      .btn:hover {
-        border-bottom: 1px solid transparent;
-        box-shadow: inset 0 -100px #fff;
-        padding: 15px 20px;
-      }
-
-      .btn:hover p {
-        color: #231f20;
-        cursor: pointer;
-      }
-
-      .btn:hover img {
-        filter: invert(0.7);
-      }
-
-      .prj_btn {
-        width: 39.5%;
-        padding: 20px 0;
-        transform: translate(0, -105.6%);
-      }
-
-      .prj_btn:hover {
-        border-bottom: 1px solid transparent;
-        box-shadow: inset 0 -100px #fff;
-        padding: 20px 25px;
-      }
-
-      /* Desktops and laptops ----------- */
-      @media only screen and (min-width: 1150px) and (max-width: 1356px) {
-        .wrk {
-          margin-top: 15vh;
-        }
-        .con {
-          padding-bottom: 15vh;
-          margin-top: 46vh;
-        }
-        #img_chu {
-          width: 15vw;
-          margin-bottom: -10%;
-        }
-
-        #img_abu {
-          margin-bottom: 7%;
-        }
-
-        #img_sta {
-          width: 80%;
-          margin-bottom: -6%;
-        }
-      }
-
-      @media only screen and (min-width: 1430px) {
-        .bnr_t {
-          transform: translate(0, 60vh);
-        }
-        .bnr h1 {
-          line-height: 110%;
-          font-size: 8.1vw;
-        }
-        .bnr_img {
-          margin-top: -15%;
-        }
-        #img_sho {
-          width: 88%;
-          margin-left: 2.2vw;
-          margin-bottom: -2%;
-        }
-        .wrk {
-          margin-top: 12vh;
-        }
-        .con {
-          padding-bottom: 10vh;
-          margin-top: 36vh;
-        }
-      }
-    </style>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
   </head>
-  <body
-    data-new-gr-c-s-check-loaded="14.1050.0"
-    data-gr-ext-installed=""
-    style="height: 4835px"
-  >
-    <div class="loader" id="loader" style="display: none">
-      <img src="/photos/load.gif" />
-      <h1>LOADING...</h1>
-    </div>
-    <div class="logo">
-      <p>Jawwad Ur Rehman<br />Visual Designer</p>
-    </div>
-    <nav class="col-3">
-      <div>
-        <a href="/about/">about</a><br />
-        <a href="/projects/">projects</a>
-      </div>
-      <div>
-        <a target="_blank" href="https:/www.behance.net/abhishek_jha">behance</a
-        ><br />
-        <a target="_blank" href="https:/dribbble.com/abhishek_jha">dribbble</a
-        ><br />
-        <a
-          href="mailto:2abhijha@gmail.com?subject=Lets%20Work%20Together"
-          title="I usually respond in a day."
-          >email</a
-        >
-      </div>
-    </nav>
-    <!--MAIN-->
-    <!--SCROLL-CTN-->
-    <div
-      id="luxy"
-      style="
-        width: 100%;
-        position: fixed;
-        transform: translate3d(0px, -1412px, 0px);
-      "
-    >
-      <!--BANNER-->
-      <div class="bnr col-12">
-        <div class="bnr_c">
-          <img id="scroll" src="/photos/scroll.png" />
+  <body>
+    <div class="container">
+      <header>
+        <nav style="z-index: 999">
           <div>
-            <p class="delay">
-              <span class="row">
-                <span data-emergence="visible" class=""
-                  >Hello! I'm Jawwad,</span
-                >
-              </span>
-              <span class="row">
-                <span data-emergence="visible" class=""
-                  >I am a passionate and creative UI/UX Designer
-                </span>
-              </span>
-              <span class="row">
-                <span data-emergence="visible" class=""
-                  >with experience in creating highly polished</span
-                >
-              </span>
-              <span class="row">
-                <span data-emergence="visible" class=""
-                  >Interfaces for the web and mobile.</span
-                > </span
-              ><br />
-              <span class="row">
-                <span data-emergence="visible" class=""
-                  ><a style="text-decoration: underline" href="/about/"
-                    >Read More About Me</a
-                  ></span
-                >
-              </span>
+            <p style="font-weight: 300; letter-spacing: -0.3px">
+              Jawwad Ur Rehman
+            </p>
+            <p
+              style="
+                font-weight: 200;
+                font-size: 14px;
+                letter-spacing: -0.3px;
+                margin-top: -2px;
+              "
+            >
+              Creative Developer
             </p>
           </div>
-        </div>
-        <br />
-        <div class="bnr_t">
-          <div class="no-out" style="z-index: 1">
-            <h1
-              class="luxy-el"
-              data-horizontal="1"
-              data-speed-x="-35"
-              style="transform: translate3d(-988.4px, 28.24px, 0px)"
-            >
-              <span class="row">
-                <span data-emergence="visible" class=""
-                  >Flavorist of mesmerizing</span
-                >
-              </span>
-            </h1>
-            <h1
-              class="le luxy-el"
-              data-horizontal="1"
-              data-speed-x="35"
-              style="transform: translate3d(988.4px, 28.24px, 0px)"
-            >
-              <span class="row">
-                <span data-emergence="visible" class=""
-                  >Interface and designs</span
-                >
-              </span>
-            </h1>
+          <div class="row top-nav">
+            <ul>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+            </ul>
+            <div style="margin-left: 40px">
+              <a class="btn-stroke transition" href="#">Get in Touch</a>
+            </div>
           </div>
-
-          <div
+          <div id="mobile-nav" class="mobile-nav">
+            <li>
+              <a id="mobile-nav-toggle-btn" href="#" class="icon-btn"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  role="img"
+                  class="iconify iconify--bx"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                  data-icon="bx:menu-alt-right"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"
+                  ></path></svg
+              ></a>
+              <ul class="vis-none">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li class="last"><a href="#">Get in Touch</a></li>
+              </ul>
+            </li>
+          </div>
+        </nav>
+        <div style="z-index: 20" class="row section-1">
+          <div class="col-8 hor-center col">
+            <h1 class="main-heading">
+              Web And App <br /><strong style="font-weight: 400"
+                >Developer</strong
+              >
+            </h1>
+            <p
+              style="
+                max-width: 410px;
+                font-size: 18px;
+                font-weight: 200;
+               
+                margin: 40px 0px;
+                color: #ffffffe0;
+              "
+            >
+              Hello! I'm
+              <strong style="color: #ffff; font-weight: 400">Jawwad</strong>,
+              from Pakistan <br />
+              I am a passionate and creative Developer with experience in
+              creating highly polished Interfaces for the web and mobile.
+            </p>
+            <a href="#" class="btn-underline">
+              Read More About Me
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bx"
+                width="1em"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                data-icon="bx:chevron-right"
+              >
+                <path
+                  fill="currentColor"
+                  d="M10.707 17.707L16.414 12l-5.707-5.707l-1.414 1.414L13.586 12l-4.293 4.293z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="col-4 img-porfolio">
+            <img
+              class="portfolio-img"
+              alt="jawwadurrehman"
+              src="/images/trans.png"
+            />
+          </div>
+        </div>
+        <div class="back-heading">WEB AND APP DEVELOPER</div>
+      </header>
+      <div class="recent-projects">
+        <div>
+          <div class="back-text">
+            <h2>Recent Projects</h2>
+            <span>Recent Projects</span>
+          </div>
+          <div class="project-boxes" id="project-boxes"> 
+            <li class="project-box">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
+              <div>
+                <h5>Bounce Rate App</h5><a href="">Check</a>
+              </div>
+            </li>
+            <li class="project-box">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
+              <div>
+                <h5>Bounce Rate App</h5><a href="">Check</a>
+              </div>
+            </li>
+            <li class="project-box">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
+              <div>
+                <h5>Bounce Rate App</h5><a href="">Check</a>
+              </div>
+            </li>
+            <li class="project-box">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
+              <div>
+                <h5>Bounce Rate App</h5><a href="">Check</a>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="row">
+          <div class="col-4">
+            <p style="font-weight: 400; letter-spacing: -2px;color: black;font-size: 25px;">
+              Jawwad Ur Rehman
+            </p>
+            <p
+              style="
+                font-weight: 300;
+                font-size: 20px;
+                letter-spacing: -1px;
+                margin-top: -2px;
+                color: black
+              "
+            >
+              Creative Developer
+            </p>
+            <p
             style="
-              z-index: 2;
-              margin-left: 30.3%;
-              transform: translate3d(0px, -616.56px, 0px);
+            max-width: 410px;
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 30px;
+            color: #000;
+            opacity: 0.6;
             "
-            class="bnr_img imgrev luxy-el"
-            data-speed-y="-19"
-            data-offset="-80"
-            data-emergence="visible"
           >
-            <img id="imgb" src="/photos/b4.jpg" />
-            <div>
-              <img
-                id="imgc"
-                src="/photos/c4.png"
-                class="luxy-el"
-                data-speed-y="15"
-                style="transform: translate3d(0px, 423.6px, 0px)"
-              />
-            </div>
-          </div>
-
-          <div style="z-index: 3">
-            <h1
-              class="luxy-el outline"
-              data-horizontal="1"
-              data-speed-x="-35"
-              style="transform: translate3d(-988.4px, 28.24px, 0px)"
-            >
-              <span class="row">
-                <span data-emergence="visible" class=""
-                  >Flavorist of mesmerizing</span
-                >
-              </span>
-            </h1>
-            <h1
-              class="le luxy-el outline"
-              data-horizontal="1"
-              data-speed-x="35"
-              style="transform: translate3d(988.4px, 28.24px, 0px)"
-            >
-              <span class="row">
-                <span data-emergence="visible" class=""
-                  >Interface and designs</span
-                >
-              </span>
-            </h1>
-          </div>
-        </div>
-      </div>
-      <br /><br />
-      <!--WORK-->
-      <div class="wrk">
-        <div class="wrk_t">
-          <p class="row" style="margin-top: 12px">
-            <span
-              data-emergence="visible"
-              style="transition-delay: 0.8s"
-              class=""
-              >FEATURED PROJECTS</span
-            >
+           
+          
+            I am a passionate and creative Developer with experience in
+            creating highly polished Interfaces for the web and mobile.
           </p>
-          <h1>
-            <span class="row">
-              <span class="outline -o" data-emergence="visible">work</span>
-            </span>
-            <span class="row">
-              <span data-emergence="visible" class="">work</span>
-            </span>
-            <span class="row">
-              <span class="outline -o" data-emergence="visible">work</span>
-            </span>
-          </h1>
-        </div>
-
-        <div class="wrk_s">
-          <div class="wrk_e" style="width: 40vw">
-            <a target="_blank" href="http:/bit.ly/chuu-web">
-              <div
-                class="w-img imgrev"
-                data-emergence="visible"
-                onmousemove="vis();"
-                onmouseout="hid();"
-              >
-                <img class="bg" src="/photos/chbg.jpg" />
-                <div
-                  style="left: 30.8%; transform: translate3d(0px, 47.96px, 0px)"
-                  class="luxy-el"
-                  data-speed-y="4"
-                  data-offset="-65"
-                >
-                  <img id="img_chu" src="/photos/chuu.png" />
-                </div>
-              </div>
-            </a>
-            <div class="w-txt">
-              <p>01.</p>
-              <div>
-                <p>Chuu Seoul</p>
-                <span>Website</span>
-              </div>
+          </div>
+          <div class="col-4">
+            <h4 style="color: black;">LINKS</h4>
+            <div class="links-footer">
+              <a href="#">Home</a>
+              <a href="#">Projects</a>
+              <a href="#">About</a>
             </div>
           </div>
-        </div>
-
-        <div
-          class="wrk_s flex jus"
-          style="padding: 12.5% 0 15% 0; align-items: flex-end"
-        >
-          <a target="_blank" href="/projects/index.html" class="prj_btn btn">
-            <p>
-              <span class="row">
-                <span data-emergence="visible" class="">See All Projects</span>
-              </span>
-            </p>
-            <span class="row">
-              <span data-emergence="visible" class=""
-                ><img src="/photos/larro.svg"
-              /></span>
-            </span>
-          </a>
-          <div class="wrk_e" style="width: 45vw">
-            <a target="_blank" href="http:/bit.ly/shosiz">
-              <div
-                class="w-img imgrev"
-                data-emergence="visible"
-                onmousemove="vis();"
-                onmouseout="hid();"
-              >
-                <img class="bg" src="/photos/shbg.jpg" />
-                <div
-                  style="left: 5%; transform: translate3d(0px, -31.2px, 0px)"
-                  class="luxy-el"
-                  data-speed-y="-5"
-                  data-offset="110"
-                >
-                  <img id="img_sho" src="/photos/shoe.png" />
-                </div>
-              </div>
-            </a>
-            <div class="w-txt">
-              <p>02.</p>
-              <div>
-                <p>Shoe Size Finder</p>
-                <span>Mobile App/Concept</span>
-              </div>
+          <div class="col-4">
+            <h4 style="color: black;">Contact</h4>
+            <div class="contact-details">
+            <div class="row">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--dashicons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" data-icon="dashicons:email"><path fill="currentColor" d="M3.87 4h13.25C18.37 4 19 4.59 19 5.79v8.42c0 1.19-.63 1.79-1.88 1.79H3.87c-1.25 0-1.88-.6-1.88-1.79V5.79c0-1.2.63-1.79 1.88-1.79zm6.62 8.6l6.74-5.53c.24-.2.43-.66.13-1.07c-.29-.41-.82-.42-1.17-.17l-5.7 3.86L4.8 5.83c-.35-.25-.88-.24-1.17.17c-.3.41-.11.87.13 1.07z"></path></svg>
+              <p style="color: #000;">syedjawwadurrehman@gmail.com</p>
+            </div>
+            <div class="row">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--dashicons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" data-icon="dashicons:location"><path fill="currentColor" d="M10 2C6.69 2 4 4.69 4 8c0 2.02 1.17 3.71 2.53 4.89c.43.37 1.18.96 1.85 1.83c.74.97 1.41 2.01 1.62 2.71c.21-.7.88-1.74 1.62-2.71c.67-.87 1.42-1.46 1.85-1.83C14.83 11.71 16 10.02 16 8c0-3.31-2.69-6-6-6zm0 2.56a3.44 3.44 0 1 1 0 6.88a3.44 3.44 0 0 1 0-6.88z"></path></svg>
+              <p style="color: #000;">Karachi, Pakistan</p>
             </div>
           </div>
-        </div>
-
-        <div class="wrk_s flex jus">
-          <div class="wrk_e" style="width: 35vw">
-            <a target="_blank" href="http:/bit.ly/abudezo">
-              <div
-                class="w-img imgrev"
-                data-emergence="visible"
-                onmousemove="vis();"
-                onmouseout="hid();"
-              >
-                <img class="bg" src="/photos/pobg.jpg" />
-                <div
-                  class="luxy-el"
-                  data-speed-y="-4"
-                  data-offset="175"
-                  style="transform: translate3d(0px, 62.04px, 0px)"
-                >
-                  <img id="img_abu" src="/photos/post.png" />
-                </div>
-              </div>
-            </a>
-            <div class="w-txt">
-              <p>03.</p>
-              <div>
-                <p>Abudezo E-cards</p>
-                <span>Mobile App</span>
-              </div>
-            </div>
           </div>
-          <div class="wrk_e" style="width: 28vw; transform: translate(0, 55%)">
-            <a target="_blank" href="https:/bit.ly/ptemplate1">
-              <div
-                class="w-img imgrev"
-                data-emergence="visible"
-                onmousemove="vis();"
-                onmouseout="hid();"
-              >
-                <img class="bg" src="/photos/ptbg.jpg" />
-                <div
-                  style="left: 8.1%; transform: translate3d(0px, -28.52px, 0px)"
-                  class="luxy-el"
-                  data-speed-y="2"
-                  data-offset="-85"
-                >
-                  <img id="img_sta" src="/photos/pt.png" />
-                </div>
-              </div>
-            </a>
-            <div class="w-txt">
-              <p>04.</p>
-              <div>
-                <p>Photographers Folio</p>
-                <span>Website/Template</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--CONTACT-->
-      <div class="con flex">
-        <div class="con_t">
-          <h1 style="position: relative; z-index: 4">
-            <span class="row">
-              <span class="outline -o" data-emergence="visible">CONTACT</span>
-            </span>
-            <span class="row">
-              <span data-emergence="visible" class="">CONTACT</span>
-            </span>
-          </h1>
-          <h1>
-            <span class="row">
-              <span
-                class="outline -o"
-                style="transition-delay: 0.5s"
-                data-emergence="visible"
-                >CONTACT</span
-              >
-            </span>
-          </h1>
-          <div
-            class="imgrev luxy-el"
-            data-speed-y="-4.5"
-            data-offset="160"
-            data-emergence="visible"
-            style="transform: translate3d(0px, 32.92px, 0px)"
-          >
-            <img src="/photos/cont2.gif" />
-          </div>
-        </div>
-        <div class="con_p">
-          <p class="delay">
-            <span class="row">
-              <span data-emergence="visible" class=""
-                >Have a project in mind? Would you like</span
-              >
-            </span>
-            <span class="row">
-              <span data-emergence="visible" class=""
-                >to share it? Feel free to reach out</span
-              >
-            </span>
-            <span class="row">
-              <span data-emergence="visible" class=""
-                >by writing an e-mail.</span
-              >
-            </span>
-          </p>
-          <br />
-          <a
-            href="mailto:rnegic341@gmail.com?subject=Lets%20Work%20Together"
-            class="btn"
-            title="I usually respond in a day."
-          >
-            <p>
-              <span class="row">
-                <span data-emergence="visible" class="">Get in touch</span>
-              </span>
-            </p>
-            <span class="row">
-              <span data-emergence="visible" class=""
-                ><img src="/photos/larro.svg"
-              /></span>
-            </span>
-          </a>
-          <p class="delay copy">
-            <span class="row">
-              <span data-emergence="visible" class=""
-                >Designed and developed by Jawwad Ur Rehman.</span
-              >
-            </span>
-            <span class="row">
-              <span data-emergence="visible" class=""
-                >© <span style="display: inline" id="year">2022</span> All
-                rights reserved.</span
-              >
-            </span>
-          </p>
         </div>
       </div>
     </div>
-    <!--SCROLL-END-->
-
-    <span
-      id="float"
-      class="float beh"
-      style="left: 893px; top: 694px; opacity: 0"
-      ><img src="/photos/beh.png"
-    /></span>
-
-    <script>
-      document.onreadystatechange = function () {
-        if (document.readyState !== "complete") {
-          document.querySelector("#loader").style = "visibility: visible;";
-        } else {
-          document.querySelector("#loader").style =
-            "opacity: 0; pointer-events: none;";
-          setTimeout(function () {
-            document.querySelector("#loader").style = "display: none";
-          }, 1200);
-        }
-      };
-
-      document.getElementById("year").innerHTML = new Date().getFullYear();
-
-      function changeImg(imgNumber) {
-        var bImg = [
-          "/photos/b1.jpg",
-          "/photos/b2.jpg",
-          "/photos/b3.jpg",
-          "/photos/b4.jpg",
-        ];
-        var cImg = [
-          "/profile/trans.png",
-          "/profile/trans.png",
-          "/profile/trans.png",
-          "/profile/trans.png",
-        ];
-        //var imgShown = document.getElementById('imgc').src;
-        var newImgNumber = Math.floor(Math.random() * bImg.length);
-        document.getElementById("imgb").src = bImg[newImgNumber];
-        document.getElementById("imgc").src = cImg[newImgNumber];
-      }
-
-      document.addEventListener("DOMContentLoaded", changeImg);
-
-      function vis() {
-        document.getElementById("float").style.opacity = "1";
-      }
-
-      function hid() {
-        document.getElementById("float").style.opacity = "0";
-      }
-
-      var $ = document.querySelector.bind(document);
-      var $on = document.addEventListener.bind(document);
-      var followMouse = function () {
-        key = requestAnimationFrame(followMouse);
-
-        if (!x || !y) {
-          x = xmouse;
-          y = ymouse;
-        } else {
-          dx = (xmouse - x) * 0.125;
-          dy = (ymouse - y) * 0.125;
-          if (Math.abs(dx) + Math.abs(dy) < 0.1) {
-            x = xmouse;
-            y = ymouse;
-          } else {
-            x += dx;
-            y += dy;
-          }
-        }
-        ball.style.left = x + "px";
-        ball.style.top = $("#luxy").scrollTop + y + "px";
-      };
-
-      var xmouse, ymouse;
-      var ball = $("#float");
-      var x = void 0,
-        y = void 0,
-        dx = void 0,
-        dy = void 0,
-        tx = 0,
-        ty = 0,
-        key = -1;
-
-      $on("mousemove", function (e) {
-        xmouse = e.clientX || e.pageX;
-        ymouse = e.clientY || e.pageY;
-      });
-
-      document.addEventListener("DOMContentLoaded", followMouse);
-    </script>
-    <script src="/js/luxy.js"></script>
-    <script src="/js/emergence.js"></script>
-    <script>
-      luxy.init();
-
-      emergence.init({
-        container: window,
-        reset: false,
-        handheld: true,
-        throttle: 250,
-        elemCushion: 0.64,
-        offsetTop: 0,
-        offsetRight: 0,
-        offsetBottom: 5,
-        offsetLeft: 0,
-        callback: function (element, state) {
-          if (state === "visible") {
-            console.log("Element is visible.");
-          } else if (state === "reset") {
-            console.log("Element is hidden with reset.");
-          } else if (state === "noreset") {
-            console.log("Element is hidden with NO reset.");
-          }
-        },
-      });
-    </script>
-    <noscript>
-      Congrats Time Traveller, You are in the 90s. Now in order to access this
-      site you either need to update your browser or enable Javascript from
-      settings. And please don't use Internet explorer :).
-    </noscript>
+    <script src="/js/script.js"></script>
   </body>
 </html>

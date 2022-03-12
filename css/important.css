@@ -1,0 +1,7 @@
+.di-none {
+    display: none !important;
+  }
+.vis-none{
+    visibility: hidden;
+    opacity: 0;
+}
